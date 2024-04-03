@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient( 145deg, rgb(255, 251, 0), rgba(255, 0, 0, 0.596));
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+header .title,
+p{
+    text-transform: capitalize;
+}
+
+body .control {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px auto;
+    max-width: 1000px;
+}
+
+body .control label {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+
+}
+
+.control label input {
+    width: 50%;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.control label select {
+    padding: 5px 10px;
+}
+
+body .container {
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    padding: 10px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+body .product-card {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    min-height:450px ;
+    width: 100%;
+    max-width: 325px;
+    padding: 20px 30px 30px 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(255, 0, 0, 0.4);
+    /* overflow: hidden; */
+}
+
+.product-card h2 {
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.product-card p {
+    font-size: 12px;
+}
+
+.product-card .image {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    height: 200px;
+}
+
+.product-card .image img {
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+}
+
+body .product-card .Kategori {
+    margin-top: 5px;
+    font-size: 10px;
+    text-transform: capitalize;
+}
+
+body .product-card span{
+    font-weight: 600;
+}
+
+.product-card button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 0px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.product-card button:hover{
+    background-color: brown;
+    color: white;
+}
